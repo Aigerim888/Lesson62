@@ -1,8 +1,8 @@
-﻿using Lesson62.Models;
+﻿using Shop.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace Lesson62.Controllers
+namespace Shop.Controllers
 {
     public class HomeController : Controller
     {
@@ -23,10 +23,10 @@ namespace Lesson62.Controllers
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        /*[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        }*/
     }
 }
